@@ -14,6 +14,11 @@
     height: 64px;
 }
 
+.profile-container header span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .profile-container header a {
     width: 260px;
     margin-left: auto;

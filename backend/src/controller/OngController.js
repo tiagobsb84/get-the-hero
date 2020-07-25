@@ -10,8 +10,12 @@ module.exports = {
 
   async create(request, response){
       //criar um id.
-    const id = crypto.randomBytes(4).toString('HEX');
 
+    // console.log('return request ', request.body);
+    const {name, email, whatsapp, city, uf} = request.body;
+
+    const id = crypto.randomBytes(4).toString('HEX');
+    
     await connection('ongs').insert({
         id,
         name,
